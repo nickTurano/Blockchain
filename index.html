@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Blockchain Simulator</title>
+	<style type='text/css'>
+	.colmask{
+	   position: relative;
+	   overflow: hidden;
+	   margin: 0px auto;
+	   width: 100%;
+	   background-color: grey
+	}
+	.header{
+	   float: left;
+	   width: 100%;
+	   font-size: 40px;
+	   background-color: black;
+       color: white
+	}
+	.footer{
+	   float: left;
+	   width: 100%;
+	   background-color: #b4caf7
+	}
+	body {
+	   padding: 0px;
+	   margin: 0px;
+	   font-size: 100%;
+	   background-color: black;
+       color: white
+	}
+	</style>
+	<metaname="viewport"content="width=device-width, initial-scale=1">
+    <script type="text/JavaScript" src="client.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jquerymobile/1.4.5/jquery.mobile.min.css">
+      
+</head>
+<body>
+	<div class="colmask">
+	
+		<div class="header">
+			<p align="left">Blockchain Simulator<br></p>
+		</div>
+		<div class="colleft">
+            <p align="left">Would you like to create a new block?<br></p>
+                Block Data:
+				<input type="text" id="blockData"><br>
+				Difficulty (between 1 and 10.  WARNING: Increasing difficulty will increase mining times!): <input type="number" name="quantity" min="1" max="1" id="diff">
+                <button onClick='createNewBlock()'>Submit</button>
+        </div>
+        <div id='output'></div>
+
+        </div>
+		
+		<div class="footer">
+			<p align="center">Drexel University SE-575<br></p>
+		</div>
+	</div>
+</body>
+</html>
