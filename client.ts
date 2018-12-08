@@ -79,6 +79,7 @@ function addNewBlock(input: string){
 function publishBlock(block: Block){
     let outHTML: string = '<div style="background-color: #cfc ; padding: 10px; border: 1px solid green;">';
     outHTML += 'BLOCK NUMBER: ' + myChain.chain.length + '<br>';
+    outHTML += 'Block Data:' + block.data + '<br>'
     outHTML += 'Hash: ' + block.blockHash + '<br>'
     outHTML += 'Previous Hash: ' + block.previousHash + '<br>';
     outHTML += 'Nonce: ' + block.nonce + '<br>';
